@@ -13,14 +13,13 @@ $(document).ready(function () {
   );
   $.ajax({
     type: 'GET',
-    url: 'http://0.0.0.0:5001/api/v1/status/',
+    url: 'http://localhost:5001/api/v1/status/',
     success: function (data) {
-        console.log(data);
-        if (data.status == 'OK') {
-            $('div#api_status').addClass('available');
-        } else {
-            $('div#api_status').removeClass('available');
-        }
+      if (data.status === 'OK') {
+        $('div#api_status').addClass('available');
+      } else {
+        $('div#api_status').removeClass('available');
+      }
     }
-  })
+  });
 });

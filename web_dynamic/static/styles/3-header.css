@@ -11,10 +11,6 @@ header .logo {
     height: 100%;
 }
 
-.available {
-    background: #ff545f;
-}
-
 header #api_status{
     position: absolute;
     width:40px;
@@ -23,5 +19,9 @@ header #api_status{
     transform: translateY(-50%);
     top: 50%;
     right: 30px;
-    Background-color:#cccccc;
+    background:#cccccc;
+}
+
+header .available {
+    background: #ff545f !important;
 }
